@@ -96,6 +96,7 @@ body {
 img.card {
   max-width: 100%;
   display: block;
+  cursor: pointer;
 }
 /* repeat(auto-fit, minmax(260px, 1fr)) */
 
@@ -223,6 +224,13 @@ img.card {
   top: 2vh;
   cursor: pointer;
   user-select: none;
+}
+
+@media (max-width: 767px) {
+  .img-close {
+    top: 80px;
+  }
+
 }
 
 
@@ -2575,6 +2583,12 @@ img.card {
   .form-popup .mp-form__btn {
     display: flex;
     justify-content: center;
+}
+@media (max-width: 700px) {
+  .viber {
+    display: none;
+  }
+
 }
 
 .form-popup .mp-button {
