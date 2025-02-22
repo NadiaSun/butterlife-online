@@ -18,19 +18,60 @@
 
               
               <div class="mp-catalog-menu__link-wrapp mp-catalog-menu__link-wrapp--wide">
-                <a class="mp-catalog-menu__link" data-id="292">
+                <a class="mp-catalog-menu__link">
                   <font style="vertical-align: inherit">
                     <font class="mp-catalog-category"
-                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/beautysalon']">{{this.catalogService.catalogBeautySalon[0].category}}</font>
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/carevacuation']">{{this.catalogService.catalogCarevacuation[0].category}}</font>
                   </font>
                 
                 </a>
-                <a class="mp-catalog-menu__link" data-id="292">
+                <a class="mp-catalog-menu__link">
                   <font style="vertical-align: inherit">
                     <font class="mp-catalog-category" 
-                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/realty']">{{this.catalogService.catalogRealty[0].category}}</font>
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/catering']">{{this.catalogService.catalogCatering[0].category}}</font>
                   </font>
-
+                </a>
+                <a class="mp-catalog-menu__link">
+                  <font style="vertical-align: inherit">
+                    <font class="mp-catalog-category" 
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/firewood']">{{this.catalogService.catalogFirewood[0].category}}</font>
+                  </font>
+                </a>
+                <a class="mp-catalog-menu__link">
+                  <font style="vertical-align: inherit">
+                    <font class="mp-catalog-category" 
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/industrialmountaineering']">{{this.catalogService.catalogIndustrialmountaineering[0].category}}</font>
+                  </font>
+                </a>
+                <a class="mp-catalog-menu__link">
+                  <font style="vertical-align: inherit">
+                    <font class="mp-catalog-category" 
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/installationoffences']">{{this.catalogService.catalogInstallationoffences[0].category}}</font>
+                  </font>
+                </a>
+                <a class="mp-catalog-menu__link">
+                  <font style="vertical-align: inherit">
+                    <font class="mp-catalog-category" 
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/pavingslabs']">{{this.catalogService.catalogPavingslabs[0].category}}</font>
+                  </font>
+                </a>
+                <a class="mp-catalog-menu__link">
+                  <font style="vertical-align: inherit">
+                    <font class="mp-catalog-category" 
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/translationagency']">{{this.catalogService.catalogTranslationagency[0].category}}</font>
+                  </font>
+                </a>
+                <a class="mp-catalog-menu__link">
+                  <font style="vertical-align: inherit">
+                    <font class="mp-catalog-category" 
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/waterproofingworks']">{{this.catalogService.catalogWaterproofingworks[0].category}}</font>
+                  </font>
+                </a>
+                <a class="mp-catalog-menu__link">
+                  <font style="vertical-align: inherit">
+                    <font class="mp-catalog-category" 
+                    (click)="slowDownload()" [routerLinkActive]="'active'" [routerLink]="['/weldingworks']">{{this.catalogService.catalogWeldingworks[0].category}}</font>
+                  </font>
                 </a>
               </div>
 
@@ -188,7 +229,7 @@
       </div>
      
     </div>
-    <div class="center" style="margin: 10px 0" *ngIf="end !== 60">
+    <div class="center" style="margin: 10px 0" *ngIf="end < catalogService.catalog.length && end !== catalogService.catalog.length">
       <button (click)="BackNextButton(15)" [disabled]="clickBtn" class="cd-btn secondary load-more" id="get_more" style="display: inline-block; background-color: #e4ffe5;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Завантажити ще</font></font></button>
     </div>
   </div>
@@ -199,8 +240,8 @@
     <!-- <span class="mp-catalog__text-previewText">
       Оренда готових сайтів для нерухомості дозволяє швидко вийти на ринок із професійною онлайн-платформою. Ви отримуєте функціональний сайт із зручним пошуком об'єктів, інтеграцією карт та контактних форм без великих фінансових вкладень. Це рішення ідеально підходить для агентств та рієлторів, які хочуть привернути більше клієнтів та підвищити продажі. Крім того, готовий сайт легко оновлюється і масштабується відповідно до ваших потреб.
     </span> -->
-  <!-- <span class="mp-catalog__text-previewText" style="font-size: 12px;">
-    Оренда готових сайтів для агентств нерухомості дозволяє швидко вийти на ринок із професійною онлайн-платформою. Ви отримуєте функціональний сайт із зручним пошуком об'єктів, інтеграцією карт та контактних форм без великих фінансових вкладень. Це рішення ідеально підходить для агентств та рієлторів, які хочуть привернути більше клієнтів та підвищити продажі. Крім того, готовий сайт легко оновлюється і масштабується відповідно до ваших потреб.
-  </span> -->
+  <span class="mp-catalog__text-previewText" style="font-size: 12px;">
+    Оренда готових веб-сайтів — це оптимальне рішення для швидкого запуску онлайн-платформи без значних витрат. Ви отримуєте сучасний ресурс із зручним інтерфейсом, адаптивним дизайном, інтегрованими картами та формами зворотного зв’язку. Такий підхід підходить для різних сфер бізнесу, допомагаючи залучити більше клієнтів і розширити присутність у мережі. Готовий сайт легко оновлюється, налаштовується під ваші потреби та масштабуються разом із розвитком бізнесу.
+  </span>
 </div>
 </div>

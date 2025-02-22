@@ -18,4 +18,4 @@ export interface Email {
     id_site: string;
 }
 
-export type Category = 'Салони краси' | 'Нерухомість'
+export type Category = string

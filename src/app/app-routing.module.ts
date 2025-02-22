@@ -4,10 +4,17 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {path: '', component: AppComponent, children: [
-    {path: '', redirectTo: '/beautysalon', pathMatch: 'full'},
-    {path: 'beautysalon', component: AppComponent},
-    {path: 'realty', component: AppComponent},
-    {path: '**', redirectTo: '/beautysalon', pathMatch: 'full'},
+    {path: '', redirectTo: '/carevacuation', pathMatch: 'full'},
+    {path: 'carevacuation', component: AppComponent},
+    {path: 'catering', component: AppComponent},
+    {path: 'firewood', component: AppComponent},
+    {path: 'industrialmountaineering', component: AppComponent},
+    {path: 'installationoffences', component: AppComponent},
+    {path: 'pavingslabs', component: AppComponent},
+    {path: 'translationagency', component: AppComponent},
+    {path: 'waterproofingworks', component: AppComponent},
+    {path: 'weldingworks', component: AppComponent},
+    {path: '**', redirectTo: '/carevacuation', pathMatch: 'full'},
   ]}
 ];
 
